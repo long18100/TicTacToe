@@ -39,12 +39,15 @@
     font-size: 5rem;
     font-weight: 900;
 }
-.is-O{
+
+.is-O {
     color: rgb(184, 3, 3);
 }
-.is-X{
+
+.is-X {
     color: rgb(3, 3, 187);
 }
+
 .reset-button {
     background-color: transparent;
     width: 100px;
@@ -74,19 +77,21 @@
     margin: 0 20px;
     color: #000;
 }
-.user img{
+
+.user img {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     border: 5px solid rgb(255, 255, 255);
 }
-.active img{
+
+.active img {
     border: 5px solid green;
     padding: -5px;
     filter: drop-shadow(0px 0px 10px rgba(2, 212, 2, 0.553));
 }
 
-.announce-winner{
+.announce-winner {
     position: fixed;
     inset: 0;
     background-color: #1d1d1dce;
@@ -95,7 +100,8 @@
     justify-content: center;
     z-index: 99999;
 }
-.announce-winner_box{
+
+.announce-winner_box {
     background-color: #000000;
     border-radius: 10px;
     border: 2px solid #fff;
