@@ -1,0 +1,103 @@
+#app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-none {
+    display: none;
+}
+
+.game {
+    text-align: center;
+    color: #fff;
+}
+
+.board {
+    margin: auto;
+    width: 350px;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.square {
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 900;
+}
+.is-O{
+    color: rgb(184, 3, 3);
+}
+.is-X{
+    color: rgb(3, 3, 187);
+}
+.reset-button {
+    background-color: transparent;
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.winner-square {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border: 1px solid #fff;
+}
+
+.user-container {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.user {
+    width: 80px;
+    aspect-ratio: 1/1;
+    margin: 0 20px;
+    color: #000;
+}
+.user img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
+.active img{
+    border: 5px solid green;
+    padding: -5px;
+    filter: drop-shadow(0px 0px 10px rgba(2, 212, 2, 0.553));
+}
+
+.announce-winner{
+    position: fixed;
+    inset: 0;
+    background-color: #1d1d1dce;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+.announce-winner_box{
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    padding: 150px;
+}
